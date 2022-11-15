@@ -61,6 +61,7 @@ class MultiWindowManager {
       debugPrint("window \(windowId) not exists.")
       return
     }
+    MultiWindowManager.shared.onClose(windowId: windowId)
     window.close()
   }
 
