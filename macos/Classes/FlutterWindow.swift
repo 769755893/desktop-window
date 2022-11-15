@@ -116,4 +116,5 @@ extension FlutterWindow: NSWindowDelegate {
 func RegisterPluginsOrigin(registry: FlutterPluginRegistry) {
   SharedPreferencesPluginOriginal.register(with: registry.registrar(forPlugin: "SharedPreferencesPlugin"))
   WindowManagerPluginOriginal.register(with: registry.registrar(forPlugin: "WindowManagerPlugin"))
+  ScreenRetrieverPluginOriginal.register(with: registry.registrar(forPlugin: "ScreenRetrieverPlugin"))
 }
