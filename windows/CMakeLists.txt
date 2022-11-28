@@ -11,7 +11,9 @@ add_library(${PLUGIN_NAME} SHARED
   "multi_window_manager.cc"
   "flutter_window.cc"
   "window_channel.cc"
-  "base_flutter_window.cc")
+  "base_flutter_window.cc"
+  "origin_plugin_register.hpp"
+)
 apply_standard_settings(${PLUGIN_NAME})
 set_target_properties(${PLUGIN_NAME} PROPERTIES
   CXX_VISIBILITY_PRESET hidden)
